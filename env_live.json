@@ -1,0 +1,24 @@
+{
+  "server": {
+    "name": "@project_name@",
+    "port": 8080
+  },
+  "vault": {
+    "url": "https://vault.peya.co/v1/secret/@project_name@",
+    "timeout": 5000,
+    "enabled": true
+  },
+  "new_relic": {
+    "app_name": "live-@project_name@.pedidosya.com",
+    "app_key": ""
+  },
+  "auth": {
+    "url": "http://auth.live.peja.co",
+    "timeout": 5000,
+    "enabled": true
+  },
+  "aws_credentials": {
+    "aws_access_key": "",
+    "aws_secret_key": ""
+  }
+}

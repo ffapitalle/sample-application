@@ -1,0 +1,11 @@
+# vagrant files
+.vagrant
+
+# Goland IDE files
+.idea
+
+# make test files generated
+coverage.out
+report.json
+Vagrantfile
+service
