@@ -19,3 +19,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           path: CHANGELOG.md
           content: steps.generate.outputs.changelog
+          commit_message: 'docs(CHANGELOG): update release notes'
