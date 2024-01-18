@@ -9,6 +9,13 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: "✏️ Generate release changelog"
+        id: generate
         uses: heinrichreimer/action-github-changelog-generator@v2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: "✏️ Update CHANGELOG.md"
+        uses: wow-actions/update-file@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: CHANGELOG.md
+          content: steps.generate.outputs.changelog
