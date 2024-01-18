@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM golang:1.14-alpine as compiler
+FROM golang:1.20-alpine as compiler
 ARG github_user
 ARG github_token
 ENV GOPRIVATE "github.com/pedidosya"
